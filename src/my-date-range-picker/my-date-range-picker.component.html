@@ -19,7 +19,7 @@
         <table class="header">
             <tr>
                 <td>
-                    <div style="float:left">
+                    <div class="test">
                         <div class="headerbtncell"><button type="button" class="headerbtn mydrpicon icon-mydrpleft" [attr.aria-label]="opts.ariaLabelPrevMonth" (click)="onPrevMonth()" [disabled]="prevMonthDisabled" [ngClass]="{'headerbtnenabled': !prevMonthDisabled, 'headerbtndisabled': prevMonthDisabled}"></button></div>
                         <div class="headermonthtxt">
                             <button class="headerlabelbtn" type="button" [ngClass]="{'monthlabel': opts.monthSelector}" (click)="opts.monthSelector&&onSelectMonthClicked($event)" tabindex="{{opts.monthSelector?'0':'-1'}}">{{visibleMonth.monthTxt}}</button>

@@ -1,13 +1,13 @@
 {
   "name": "mydaterangepicker",
-  "version": "4.1.11",
-  "description": "Angular date range picker",
+  "version": "4.1.12",
+  "description": "AADRP - Another Angular Date Range Picker",
   "keywords": [
     "Angular2",
     "Angular4",
     "date range picker"
   ],
-  "author": "kekeh",
+  "author": "anbi",
   "license": "MIT",
   "repository": {
     "type": "git",

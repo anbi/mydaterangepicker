@@ -21,9 +21,7 @@
                 <td>
                     <div class="test">
                         <div class="headermonthtxt">{{visibleMonth.monthTxt}} {{visibleMonth.year}}</div>
-                        
                         <div class="headerbtncell"><button type="button" class="headerbtn mydrpicon icon-mydrpleft" [attr.aria-label]="opts.ariaLabelPrevMonth" (click)="onPrevMonth()" [disabled]="prevMonthDisabled" [ngClass]="{'headerbtnenabled': !prevMonthDisabled, 'headerbtndisabled': prevMonthDisabled}"></button></div>
-                        
                         <div class="headerbtncell"><button type="button" class="headerbtn mydrpicon icon-mydrpright" [attr.aria-label]="opts.ariaLabelNextMonth" (click)="onNextMonth()" [disabled]="nextMonthDisabled" [ngClass]="{'headerbtnenabled': !nextMonthDisabled, 'headerbtndisabled': nextMonthDisabled}"></button></div>
                     </div>
                 </td>

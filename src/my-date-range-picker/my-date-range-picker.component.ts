@@ -25,8 +25,8 @@ let myDrpStyles, myDrpTemplate;
 @Component({
     selector: "my-date-range-picker",
     exportAs: "mydaterangepicker",
-    styleUrls: [`my-date-range-picker.component.css`],
-    templateUrl: `my-date-range-picker.component.html`,
+    styleUrls: [`./my-date-range-picker.component.css`],
+    templateUrl: `./my-date-range-picker.component.html`,
     providers: [DateRangeUtilService, MYDRP_VALUE_ACCESSOR],
     encapsulation: ViewEncapsulation.None
 })

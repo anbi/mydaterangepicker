@@ -1,0 +1,32 @@
+{
+  "name": "mydaterangepicker",
+  "version": "4.1.10",
+  "description": "Angular date range picker",
+  "keywords": [
+    "Angular2",
+    "Angular4",
+    "date range picker"
+  ],
+  "author": "kekeh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anbi/mydaterangepicker.git"
+  },
+  "scripts": {},
+  "main": "bundles/mydaterangepicker.umd.js",
+  "typings": "index.d.ts",
+  "module": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "FONT-LICENSE",
+    "package.json",
+    "README.md",
+    "dist",
+    "bundles"
+  ]
+}

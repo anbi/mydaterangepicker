@@ -16,13 +16,11 @@
         <div class="titlearea" *ngIf="opts.showSelectDateText">
             <div class="titleareatxt">{{titleAreaText!==''?titleAreaText:opts.selectBeginDateTxt}}</div>
         </div>
-
         <div class="header">
             <div class="headermonthtxt">{{visibleMonth.monthTxt}} {{visibleMonth.year}}</div>
             <div class="headerbtncell"><button type="button" class="headerbtn mydrpicon icon-mydrpleft" [attr.aria-label]="opts.ariaLabelPrevMonth" (click)="onPrevMonth()" [disabled]="prevMonthDisabled" [ngClass]="{'headerbtnenabled': !prevMonthDisabled, 'headerbtndisabled': prevMonthDisabled}"></button></div>
             <div class="headerbtncell"><button type="button" class="headerbtn mydrpicon icon-mydrpright" [attr.aria-label]="opts.ariaLabelNextMonth" (click)="onNextMonth()" [disabled]="nextMonthDisabled" [ngClass]="{'headerbtnenabled': !nextMonthDisabled, 'headerbtndisabled': nextMonthDisabled}"></button></div>
         </div>
-
         <table class="caltable" *ngIf="!selectMonth&&!selectYear" [ngStyle]="{'height': opts.showSelectDateText?'calc(100% - 54px)':'calc(100% - 30px)'}">
             <thead><tr><th class="weekdaytitle weekdaytitleweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">#</th><th class="weekdaytitle" scope="col" *ngFor="let d of weekDays">{{d}}</th></tr></thead>
             <tbody>

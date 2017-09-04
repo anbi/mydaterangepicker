@@ -20,11 +20,13 @@ enum InputFocusBlur {focus = 1, blur = 2}
 enum KeyCode {enter = 13, esc = 27, space = 32}
 enum MonthId {prev = 1, curr = 2, next = 3}
 
+let myDrpStyles, myDrpTemplate;
+
 @Component({
     selector: "my-date-range-picker",
     exportAs: "mydaterangepicker",
-    styleUrls: ['./my-date-range-picker.component.css'],
-    templateUrl: './my-date-range-picker.component.html',
+    styleUrls: [`my-date-range-picker.component.css`],
+    templateUrl: `my-date-range-picker.component.html`,
     providers: [DateRangeUtilService, MYDRP_VALUE_ACCESSOR],
     encapsulation: ViewEncapsulation.None
 })

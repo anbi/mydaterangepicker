@@ -52,19 +52,26 @@ gulp.task('minify.html', function() {
 });
 
 gulp.task('inline.template.and.styles.to.component', function() {
-    var styles = fs.readFileSync('./tmp/my-date-range-picker.component.css', 'utf-8');
-    var htmlTpl = fs.readFileSync('./tmp/my-date-range-picker.component.html', 'utf-8');
+    //var styles = fs.readFileSync('./tmp/my-date-range-picker.component.css', 'utf-8');
+    //var htmlTpl = fs.readFileSync('./tmp/my-date-range-picker.component.html', 'utf-8');
 
-    styles = styles.split('\\e').join('\\\\e');
+    //styles = styles.split('\\e').join('\\\\e');
 
     return gulp.src(['./src/my-date-range-picker/my-date-range-picker.component.ts'])
         .pipe(replace(str1, str3))
         .pipe(replace(str2, str4))
-        .pipe(replace('styles: [myDrpStyles],', 'styles: [' + '`' + styles + '`' + '],'))
-        .pipe(replace('template: myDrpTemplate,', 'template: `' + htmlTpl + '`' + ','))
+        //.pipe(replace('styles: [myDrpStyles],', 'styles: [' + '`' + styles + '`' + '],'))
+        //.pipe(replace('template: myDrpTemplate,', 'template: `' + htmlTpl + '`' + ','))
         .pipe(gulp.dest(function(file) {
             return file.base;
         }));
+});
+
+gulp.task('copy.html.css', function(){
+
+    return gulp.src([,'./src/my-date-range-picker/my-date-range-picker.component.css', './src/my-date-range-picker/my-date-range-picker.component.html'])
+        .pipe(gulp.dest('./.tmpbuild/dist/'));
+
 });
 
 gulp.task('ngc.compile.publish', shell.task([
@@ -146,6 +153,7 @@ gulp.task('all', function(cb) {
         'minify.css',
         'minify.html',
         'inline.template.and.styles.to.component',
+        'copy.html.css',
         'ngc.compile.publish',
         'copy.build.to.npmdist.directory',
         'delete.tmpbuild.folder',

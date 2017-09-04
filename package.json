@@ -1,6 +1,6 @@
 {
   "name": "mydaterangepicker",
-  "version": "4.1.9",
+  "version": "4.1.10",
   "description": "Angular date range picker",
   "keywords": [
     "Angular2",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kekeh/mydaterangepicker.git"
+    "url": "https://github.com/anbi/mydaterangepicker.git"
   },
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js --progress",

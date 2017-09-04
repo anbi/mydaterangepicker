@@ -3,11 +3,11 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 import { IMyDateRange, IMyDate, IMyMonth, IMyCalendarDay, IMyCalendarMonth, IMyCalendarYear, IMyWeek, IMyDayLabels, IMyMonthLabels, IMyOptions, IMyDateRangeModel, IMyInputFieldChanged, IMyCalendarViewChanged, IMyInputFocusBlur, IMyDateSelected } from "./interfaces/index";
 import { DateRangeUtilService } from "./services/my-date-range-picker.date.range.util.service";
 
-/*
+// webpack1_
 declare var require: any;
-const myDrpStyles: string = require("./my-date-range-picker.component.scss");
+const myDrpStyles: string = require("./my-date-range-picker.component.css");
 const myDrpTemplate: string = require("./my-date-range-picker.component.html");
-*/
+// webpack2_
 
 export const MYDRP_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -20,13 +20,11 @@ enum InputFocusBlur {focus = 1, blur = 2}
 enum KeyCode {enter = 13, esc = 27, space = 32}
 enum MonthId {prev = 1, curr = 2, next = 3}
 
-let myDrpStyles, myDrpTemplate;
-
 @Component({
     selector: "my-date-range-picker",
     exportAs: "mydaterangepicker",
-    styleUrls: [`./my-date-range-picker.component.css`],
-    templateUrl: `./my-date-range-picker.component.html`,
+    styles: [myDrpStyles],
+    template: myDrpTemplate,
     providers: [DateRangeUtilService, MYDRP_VALUE_ACCESSOR],
     encapsulation: ViewEncapsulation.None
 })

@@ -1,7 +1,7 @@
 {
-  "name": "mydaterangepicker",
-  "version": "4.1.13",
-  "description": "AADRP - Another Angular Date Range Picker",
+  "name": "another-date-range-picker",
+  "version": "4.1.16",
+  "description": "ADRP - Another Date Range Picker",
   "keywords": [
     "Angular2",
     "Angular4",

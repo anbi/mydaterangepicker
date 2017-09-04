@@ -1,6 +1,6 @@
 {
   "name": "mydaterangepicker",
-  "version": "4.1.12",
+  "version": "4.1.13",
   "description": "AADRP - Another Angular Date Range Picker",
   "keywords": [
     "Angular2",
@@ -17,7 +17,9 @@
   "main": "bundles/mydaterangepicker.umd.js",
   "typings": "index.d.ts",
   "module": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-sass": "^3.1.0"
+  },
   "devDependencies": {},
   "files": [
     "index.d.ts",

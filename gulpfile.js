@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');
 var replace = require('gulp-replace');
 var sequence = require('run-sequence');
+var sass = require('gulp-sass');
 var cleancss = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var fs = require('fs');
@@ -30,6 +31,12 @@ gulp.task('clean', function () {
 
 gulp.task('backup.component.tmp', function() {
     return gulp.src('./src/my-date-range-picker/my-date-range-picker.component.ts').pipe(gulp.dest('./tmp'));
+});
+
+gulp.task('scss2css',function(){
+    return gulp.src('./src/my-date-range-picker/my-date-range-picker.component.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./src/my-date-range-picker/'));
 });
 
 gulp.task('minify.css', function() {
@@ -135,6 +142,7 @@ gulp.task('all', function(cb) {
     sequence(
         'clean',
         'backup.component.tmp',
+        'scss2css',
         'minify.css',
         'minify.html',
         'inline.template.and.styles.to.component',

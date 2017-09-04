@@ -177,11 +177,6 @@
 .mydrp .headerokbtn {
   background: #FFF; }
 
-.mydrp .header {
-  width: 100%;
-  height: 30px;
-  background-color: #FFF; }
-
 .mydrp .header td {
   vertical-align: middle;
   border: none;
@@ -345,18 +340,6 @@
 .mydrp button::-moz-focus-inner {
   border: 0; }
 
-.mydrp .headermonthtxt,
-.mydrp .headeryeartxt {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 14px;
-  height: 26px;
-  width: 40px;
-  max-width: 40px;
-  overflow: hidden;
-  white-space: nowrap; }
-
 .mydrp .btnclear:focus,
 .mydrp .btnpicker:focus,
 .mydrp .headerclearbtn:focus,
@@ -503,35 +486,31 @@
   .mydrp .nextmonth, .mydrp .prevmonth {
     background-color: transparent !important;
     color: #cacaca !important; }
-  .mydrp table.header {
-    background: transparent !important; }
-    .mydrp table.header td {
-      display: none; }
-      .mydrp table.header td:first-child {
-        display: block; }
-      .mydrp table.header td > div {
-        float: none !important;
-        position: relative; }
-        .mydrp table.header td > div .headermonthtxt {
-          width: 100px;
-          max-width: 100px;
-          float: left; }
-          .mydrp table.header td > div .headermonthtxt button {
-            background-color: transparent;
-            text-transform: none;
-            font-size: 15px;
-            color: #333; }
-        .mydrp table.header td > div .headerbtncell {
-          position: absolute;
-          width: 22px;
-          height: 22px;
-          right: 10px;
-          border-radius: 50%;
-          text-align: center; }
-          .mydrp table.header td > div .headerbtncell button {
-            background-color: transparent; }
-          .mydrp table.header td > div .headerbtncell:first-child {
-            right: 40px; }
+  .mydrp .header {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: transparent; }
+    .mydrp .header .headermonthtxt {
+      width: 100px;
+      max-width: 100px;
+      float: left; }
+      .mydrp .header .headermonthtxt button {
+        background-color: transparent;
+        text-transform: none;
+        font-size: 15px;
+        color: #333; }
+    .mydrp .header .headerbtncell {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      right: 10px;
+      border-radius: 50%;
+      text-align: center; }
+      .mydrp .header .headerbtncell button {
+        background-color: transparent; }
+      .mydrp .header .headerbtncell:first-child {
+        right: 40px; }
   .mydrp .selectiongroup .seletion {
     font-size: 16px; }
   .mydrp .daycell:focus, .mydrp .monthcell:focus, .mydrp .yearcell:focus {

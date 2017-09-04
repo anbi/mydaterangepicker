@@ -1,6 +1,7 @@
 .idea
 node_modules/
 typings/
+.npmdist/
 build-sampleapp/
 test-output/
 .tmpbuild/

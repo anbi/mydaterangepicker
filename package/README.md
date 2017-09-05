@@ -1,38 +1,19 @@
-# mydaterangepicker
+# another-date-range-picker
 
-**Angular date range picker**
+**Another date range picker**
 
-[![Build Status](https://travis-ci.org/kekeh/mydaterangepicker.svg?branch=master)](https://travis-ci.org/kekeh/mydaterangepicker)
-[![codecov](https://codecov.io/gh/kekeh/mydaterangepicker/branch/master/graph/badge.svg)](https://codecov.io/gh/kekeh/mydaterangepicker)
-[![npm](https://img.shields.io/npm/v/mydaterangepicker.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/mydaterangepicker)
+[![npm](https://img.shields.io/npm/v/another-date-range-picker.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/another-date-range-picker)
 
 ## Description
-Highly configurable Angular date range picker. Compatible with __Angular2__ and __Angular4__ versions.
+Date range picker based on [mydaterangepicker](https://kekeh.github.io/mydaterangepicker/)
 
-## Installation
 
-__npm install mydaterangepicker --save__
-
-## Usage
-
-Follow instructions from [here](https://github.com/kekeh/mydaterangepicker/blob/master/README.md)
-
-## Demo
-Online demo is [here](http://kekeh.github.io/mydaterangepicker)
-
-## Compatibility (tested with)
-* Firefox (latest)
-* Chrome (latest)
-* Chromium (latest)
-* Edge
-* IE11
-* Safari
 
 ## License
 * License: MIT
 
 ## Author
-* Author: kekeh
+* Author: kekeh + anbi
 
 ## Keywords
 * Date range picker

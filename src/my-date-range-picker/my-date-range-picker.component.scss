@@ -62,11 +62,6 @@
     animation: selectorfadein 0.06s;
 }
 
-.mydrp .selector:focus {
-    border: 1px solid #ADD8E6;
-    outline: none;
-}
-
 @keyframes selectorfadein {
     from {
         opacity: 0;
@@ -98,10 +93,6 @@
     border-bottom-color: #CCC;
     border-width: 11px;
     margin-left: -11px;
-}
-
-.mydrp .selectorarrow:focus:before {
-    border-bottom-color: #ADD8E6;
 }
 
 .mydrp .selectorarrowleft:after,
@@ -312,12 +303,6 @@
     color: #444;
 }
 
-.mydrp .disabled {
-    cursor: default !important;
-    color: #444 !important;
-    background: #FBEFEF !important;
-}
-
 .mydrp .sunday {
     color: #C30000;
 }
@@ -409,14 +394,13 @@
 .mydrp .monthlabel:focus,
 .mydrp .yearlabel:focus,
 .mydrp .yearchangebtn:focus {
-    color: #ADD8E6;
     outline: none;
 }
 
 .mydrp .daycell:focus,
 .mydrp .monthcell:focus,
 .mydrp .yearcell:focus {
-    outline: 1px solid #CCC;
+    outline: none;
 }
 
 .mydrp .icon-mydrpcalendar,
@@ -518,11 +502,17 @@ $red                    : #E52125;
     .weekdaytitle,
     .yearcell,
     .yeartable,
-    .sunday{ color:#6c6c6c !important;}
+    .sunday{
+        color:#6c6c6c !important;
+        &.disabled{
+            color:#ccc !important;
+            cursor: default !important;
+        }
+    }
   
     .markcurrday{
       $sizeBullet : 39px;
-      background: $yellow;
+      background-color: transparent;
       border-radius: 50%;
       width: $sizeBullet;
       height: $sizeBullet;
@@ -531,6 +521,7 @@ $red                    : #E52125;
       color:#333 !important;
       font-size:12px;
       text-decoration: none !important;
+      border:1px solid #999;
     }
   
     tr {
@@ -598,12 +589,12 @@ $red                    : #E52125;
     .daycell, .monthcell, .yearcell{
       &:focus{
         outline: none !important;
-        background: $yellow !important;
+        //background: $yellow !important;
       }
     }
   
     .range {
-      background-color: $yellow!important;
+      background-color: $yellow !important;
     }
     .selecteddaybegin,
     .selecteddayend {

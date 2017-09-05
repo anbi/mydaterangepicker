@@ -52,10 +52,6 @@
   z-index: 100;
   animation: selectorfadein 0.06s; }
 
-.mydrp .selector:focus {
-  border: 1px solid #ADD8E6;
-  outline: none; }
-
 @keyframes selectorfadein {
   from {
     opacity: 0; }
@@ -82,9 +78,6 @@
   border-bottom-color: #CCC;
   border-width: 11px;
   margin-left: -11px; }
-
-.mydrp .selectorarrow:focus:before {
-  border-bottom-color: #ADD8E6; }
 
 .mydrp .selectorarrowleft:after,
 .mydrp .selectorarrowleft:before {
@@ -263,11 +256,6 @@
 .mydrp .nextmonth {
   color: #444; }
 
-.mydrp .disabled {
-  cursor: default !important;
-  color: #444 !important;
-  background: #FBEFEF !important; }
-
 .mydrp .sunday {
   color: #C30000; }
 
@@ -344,13 +332,12 @@
 .mydrp .monthlabel:focus,
 .mydrp .yearlabel:focus,
 .mydrp .yearchangebtn:focus {
-  color: #ADD8E6;
   outline: none; }
 
 .mydrp .daycell:focus,
 .mydrp .monthcell:focus,
 .mydrp .yearcell:focus {
-  outline: 1px solid #CCC; }
+  outline: none; }
 
 .mydrp .icon-mydrpcalendar,
 .mydrp .icon-mydrpok,
@@ -419,8 +406,18 @@
   .mydrp .yeartable,
   .mydrp .sunday {
     color: #6c6c6c !important; }
+    .mydrp .caltable.disabled,
+    .mydrp .daycell.disabled,
+    .mydrp .monthcell.disabled,
+    .mydrp .monthtable.disabled,
+    .mydrp .weekdaytitle.disabled,
+    .mydrp .yearcell.disabled,
+    .mydrp .yeartable.disabled,
+    .mydrp .sunday.disabled {
+      color: #ccc !important;
+      cursor: default !important; }
   .mydrp .markcurrday {
-    background: #fed100;
+    background-color: transparent;
     border-radius: 50%;
     width: 39px;
     height: 39px;
@@ -428,7 +425,8 @@
     line-height: 39px;
     color: #333 !important;
     font-size: 12px;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    border: 1px solid #999; }
   .mydrp tr td,
   .mydrp tr th {
     height: 40px;
@@ -474,8 +472,7 @@
   .mydrp .selectiongroup .seletion {
     font-size: 16px; }
   .mydrp .daycell:focus, .mydrp .monthcell:focus, .mydrp .yearcell:focus {
-    outline: none !important;
-    background: #fed100 !important; }
+    outline: none !important; }
   .mydrp .range {
     background-color: #fed100 !important; }
   .mydrp .selecteddaybegin,

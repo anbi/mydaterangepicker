@@ -67,13 +67,6 @@ gulp.task('inline.template.and.styles.to.component', function() {
         }));
 });
 
-gulp.task('copy.html.css', function(){
-
-    return gulp.src([,'./src/my-date-range-picker/my-date-range-picker.component.css', './src/my-date-range-picker/my-date-range-picker.component.html'])
-        .pipe(gulp.dest('./.tmpbuild/dist/'));
-
-});
-
 gulp.task('ngc.compile.publish', shell.task([
     'npm run ngc'
 ]));
@@ -153,7 +146,6 @@ gulp.task('all', function(cb) {
         'minify.css',
         'minify.html',
         'inline.template.and.styles.to.component',
-        'copy.html.css',
         'ngc.compile.publish',
         'copy.build.to.npmdist.directory',
         'delete.tmpbuild.folder',

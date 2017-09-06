@@ -482,7 +482,8 @@
     border: none;
     padding: 15px;
     border-radius: 6px;
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    box-shadow: 0 50px 100px 0px #ccc; }
   .mydrp .selectorarrow {
     margin-top: 12px; }
   .mydrp .titleareatxt,

@@ -462,9 +462,9 @@
     font-size: 16px; }
   .mydrp .daycell:focus, .mydrp .monthcell:focus, .mydrp .yearcell:focus {
     outline: none !important; }
-  .mydrp .markcurrday,
   .mydrp .selecteddaybegin span,
-  .mydrp .selecteddayend span {
+  .mydrp .selecteddayend span,
+  .mydrp .datevalue span {
     background-color: transparent;
     border-radius: 50%;
     width: 39px;
@@ -474,6 +474,8 @@
     color: #333 !important;
     font-size: 12px;
     text-decoration: none !important;
+    border: 1px solid transparent; }
+  .mydrp .markcurrday {
     border: 1px solid #999; }
   .mydrp .selecteddaybegin span,
   .mydrp .selecteddayend span {

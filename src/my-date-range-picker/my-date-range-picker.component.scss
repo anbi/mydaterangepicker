@@ -581,9 +581,10 @@ $red                    : #E52125;
       }
     }
 
-    .markcurrday, 
+ 
     .selecteddaybegin span, 
-    .selecteddayend span{
+    .selecteddayend span,
+    .datevalue span{
       $sizeBullet : 39px;
       background-color: transparent;
       border-radius: 50%;
@@ -594,8 +595,12 @@ $red                    : #E52125;
       color:#333 !important;
       font-size:12px;
       text-decoration: none !important;
-      border:1px solid #999;
+      border:1px solid transparent;
     }
+    .markcurrday{
+        border:1px solid #999 !important;
+    }
+
     .selecteddaybegin span, 
     .selecteddayend span{
         border:1px solid $yellow;

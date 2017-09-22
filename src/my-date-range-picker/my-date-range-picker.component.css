@@ -416,17 +416,6 @@
     .mydrp .sunday.disabled {
       color: #ccc !important;
       cursor: default !important; }
-  .mydrp .markcurrday {
-    background-color: transparent;
-    border-radius: 50%;
-    width: 39px;
-    height: 39px;
-    display: inline-block;
-    line-height: 39px;
-    color: #333 !important;
-    font-size: 12px;
-    text-decoration: none !important;
-    border: 1px solid #999; }
   .mydrp tr td,
   .mydrp tr th {
     height: 40px;
@@ -473,7 +462,24 @@
     font-size: 16px; }
   .mydrp .daycell:focus, .mydrp .monthcell:focus, .mydrp .yearcell:focus {
     outline: none !important; }
-  .mydrp .range {
+  .mydrp .markcurrday,
+  .mydrp .selecteddaybegin span,
+  .mydrp .selecteddayend span {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+    line-height: 39px;
+    color: #333 !important;
+    font-size: 12px;
+    text-decoration: none !important;
+    border: 1px solid #999; }
+  .mydrp .selecteddaybegin span,
+  .mydrp .selecteddayend span {
+    border: 1px solid #fed100;
+    background-color: #fed100 !important; }
+  .mydrp .range .datevalue span {
     background-color: #fed100 !important; }
   .mydrp .selecteddaybegin,
   .mydrp .selecteddayend {

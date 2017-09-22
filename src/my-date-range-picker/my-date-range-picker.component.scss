@@ -510,19 +510,7 @@ $red                    : #E52125;
         }
     }
   
-    .markcurrday{
-      $sizeBullet : 39px;
-      background-color: transparent;
-      border-radius: 50%;
-      width: $sizeBullet;
-      height: $sizeBullet;
-      display: inline-block;
-      line-height: $sizeBullet;
-      color:#333 !important;
-      font-size:12px;
-      text-decoration: none !important;
-      border:1px solid #999;
-    }
+    
   
     tr {
       td,
@@ -592,8 +580,29 @@ $red                    : #E52125;
         //background: $yellow !important;
       }
     }
+
+    .markcurrday, 
+    .selecteddaybegin span, 
+    .selecteddayend span{
+      $sizeBullet : 39px;
+      background-color: transparent;
+      border-radius: 50%;
+      width: $sizeBullet;
+      height: $sizeBullet;
+      display: inline-block;
+      line-height: $sizeBullet;
+      color:#333 !important;
+      font-size:12px;
+      text-decoration: none !important;
+      border:1px solid #999;
+    }
+    .selecteddaybegin span, 
+    .selecteddayend span{
+        border:1px solid $yellow;
+        background-color: $yellow !important;
+    }
   
-    .range {
+    .range .datevalue span{
       background-color: $yellow !important;
     }
     .selecteddaybegin,

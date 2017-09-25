@@ -476,7 +476,7 @@
     text-decoration: none !important;
     border: 1px solid transparent; }
   .mydrp .markcurrday {
-    border: 1px solid #999; }
+    border: 1px solid #999 !important; }
   .mydrp .selecteddaybegin span,
   .mydrp .selecteddayend span {
     border: 1px solid #fed100;
